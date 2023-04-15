@@ -1,3 +1,59 @@
+/*
+    CSS GLOBAL FOR ALL PAGES
+*/
+/* Import all fonts */
+@font-face {
+    src: url('../fonts/Rajdhani/Rajdhani-Bold.ttf');
+    font-family: 'Rajdhani-Bold';
+}
+
+@font-face {
+    src: url('../fonts/Rajdhani/Rajdhani-Light.ttf');
+    font-family: 'Rajdhani-Light';
+}
+
+@font-face {
+    src: url('../fonts/Rajdhani/Rajdhani-Medium.ttf');
+    font-family: 'Rajdhani-Medium';
+}
+
+@font-face {
+    src: url('../fonts/Rajdhani/Rajdhani-Regular.ttf');
+    font-family: 'Rajdhani-Regular';
+}
+
+@font-face {
+    src: url('../fonts/Rajdhani/Rajdhani-SemiBold.ttf');
+    font-family: 'Rajdhani-SemiBold';
+}
+
+/*
+    Map fonts to a class  
+*/
+.ff-rajdhani-bold {
+    font-family: 'Rajdhani-Bold';
+}
+
+.ff-rajdhani-light {
+    font-family: 'Rajdhani-Light';
+}
+
+.ff-rajdhani-medium {
+    font-family: 'Rajdhani-Medium';
+}
+
+.ff-rajdhani-regular {
+    font-family: 'Rajdhani-Regular';
+}
+
+.ff-rajdhani-semibold {
+    font-family: 'Rajdhani-SemiBold';
+}
+
+/*
+    CSS
+*/
+
 html {
-    font-family: arial;
+    font-family: ;
 }

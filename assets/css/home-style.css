@@ -1,4 +1,19 @@
+html {
+    padding: 0px 102px;
+}
+
 body {
     background-image: url('../images/illustrations/Bathome1.png');
     background-repeat: no-repeat;
+    border: 3px solid rgba(188, 187, 189, 0.2);
+}
+
+header {
+    padding: 102px 102px 132px 102px;
+    border: 2px solid rgba(188, 187, 189, 0.2);
+}
+
+.link-home {
+    color: white;
+    right: 20px; !important
 }
