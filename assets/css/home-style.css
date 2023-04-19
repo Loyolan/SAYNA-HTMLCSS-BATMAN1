@@ -1,19 +1,63 @@
 html {
     padding: 0px 102px;
+    margin-top: 0px;
 }
 
 body {
     background-image: url('../images/illustrations/Bathome1.png');
     background-repeat: no-repeat;
+    margin-top: -10px;
+    background-color: black;
+}
+
+/* HEADER STYLE */
+header {
+    padding: 70px 102px 102px 102px;
     border: 3px solid rgba(188, 187, 189, 0.2);
 }
 
-header {
-    padding: 102px 102px 132px 102px;
-    border: 2px solid rgba(188, 187, 189, 0.2);
+/*  NAV STYLE */
+nav {
+    float: right;
 }
 
-.link-home {
+nav a {
     color: white;
-    right: 20px; !important
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 10px;
 }
+
+nav a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/* CONTENT STYLE */
+main {
+    border: 3px solid rgba(188, 187, 189, 0.2);
+    padding: 20px;
+}
+
+.introduction {
+    text-align: center;
+}
+
+.boutton-intro {
+    margin-top: 100px;
+}
+
+.introduction p {
+    padding: 102px 132px 0px 132px;
+    font-size: 20px;
+}
+
+.boutton-intro a {
+    text-decoration: none;
+    width: 300px;
+    color: white;
+    padding: 20px 50px;
+    border: 1px solid white;
+    font-size: 14px;
+}
+
