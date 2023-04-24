@@ -3,57 +3,111 @@
 */
 /* Import all fonts */
 @font-face {
-    src: url('../fonts/Rajdhani/Rajdhani-Bold.ttf');
-    font-family: 'Rajdhani-Bold';
-}
-
-@font-face {
-    src: url('../fonts/Rajdhani/Rajdhani-Light.ttf');
-    font-family: 'Rajdhani-Light';
-}
-
-@font-face {
     src: url('../fonts/Rajdhani/Rajdhani-Medium.ttf');
     font-family: 'Rajdhani-Medium';
 }
 
 @font-face {
-    src: url('../fonts/Rajdhani/Rajdhani-Regular.ttf');
-    font-family: 'Rajdhani-Regular';
+    src: url('../fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf');
+    font-family: 'SpaceGrotesk-Regular';
 }
 
-@font-face {
-    src: url('../fonts/Rajdhani/Rajdhani-SemiBold.ttf');
-    font-family: 'Rajdhani-SemiBold';
-}
-
-/*
-    Map fonts to a class  
-*/
-.ff-rajdhani-bold {
-    font-family: 'Rajdhani-Bold';
-}
-
-.ff-rajdhani-light {
-    font-family: 'Rajdhani-Light';
-}
-
-.ff-rajdhani-medium {
-    font-family: 'Rajdhani-Medium';
-}
-
-.ff-rajdhani-regular {
-    font-family: 'Rajdhani-Regular';
-}
-
-.ff-rajdhani-semibold {
-    font-family: 'Rajdhani-SemiBold';
-}
-
-/*
-    CSS
-*/
+/*===========================================================================
+    GLOBAL STYLE
+=============================================================================*/
 
 html {
     color: white;
+    font-family: 'Rajdhani-Medium';
+}
+
+/* DEFINE ALL FONTS */
+button {
+    font-family: 'Rajdhani-Medium';
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Rajdhani-Medium';
+    font-size: 36px;
+}
+
+h2 {
+    font-family: 'SpaceGrotesk-bold';
+    font-size: 12px;
+}
+
+.sous-titre {
+    font-family: 'SpaceGrotesk-Regular';
+    font-size: 22px;
+}
+
+.text {
+    font-family: 'SpaceGrotesk-Regular';
+    font-size: 12px;
+}
+
+.text-1 {
+    font-family: 'SpaceGrotesk-Regular';
+    font-size: 18px;
+}
+
+.margin-200 {
+    margin-top: 200px;
+}
+
+/*===============================================================
+ CSS 
+ ================================================================*/
+html {
+    padding: 0px 102px;
+    margin-top: 0px;
+}
+
+body {
+    background-image: url('../images/illustrations/Bathome1.png');
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    background-color: black;
+}
+
+/* HEADER STYLE */
+header {
+    padding: 70px 102px 102px 102px;
+    border: 3px solid rgba(188, 187, 189, 0.2);
+}
+
+/*  NAV STYLE */
+nav {
+    float: right;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+nav a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/* SIDEBAR */
+aside {
+    float: right;
+    position: fixed;
+    text-align: center;
+    margin-left: 78.5%;
+}
+
+aside img {
+    margin-top: 30px;
+}
+
+/* CONTENT STYLE */
+main {
+    border: 3px solid rgba(188, 187, 189, 0.2);
+    padding: 20px;
 }

@@ -1,44 +1,3 @@
-html {
-    padding: 0px 102px;
-    margin-top: 0px;
-}
-
-body {
-    background-image: url('../images/illustrations/Bathome1.png');
-    background-repeat: no-repeat;
-    margin-top: -10px;
-    background-color: black;
-}
-
-/* HEADER STYLE */
-header {
-    padding: 70px 102px 102px 102px;
-    border: 3px solid rgba(188, 187, 189, 0.2);
-}
-
-/*  NAV STYLE */
-nav {
-    float: right;
-}
-
-nav a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: 10px;
-}
-
-nav a:hover {
-    font-weight: bolder;
-    text-decoration: underline;
-}
-
-/* CONTENT STYLE */
-main {
-    border: 3px solid rgba(188, 187, 189, 0.2);
-    padding: 20px;
-}
-
 .introduction {
     text-align: center;
 }
@@ -48,16 +7,45 @@ main {
 }
 
 .introduction p {
-    padding: 102px 132px 0px 132px;
-    font-size: 20px;
+    padding: 90px 230px 0px 230px;
 }
 
-.boutton-intro a {
+.boutton-intro button {
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.3) 40%, rgba(137, 0, 8, 0.3) 60%);
     text-decoration: none;
-    width: 300px;
+    background-color: transparent;
     color: white;
-    padding: 20px 50px;
-    border: 1px solid white;
-    font-size: 14px;
+    width: 250px;
+    border: none;
+    height: 60px;
 }
 
+section[class='content'] {
+    padding: 50px;
+    text-align: justify;
+}
+
+section[class='content'] p {
+    padding-right: 102px;
+    text-align: justify;
+}
+
+section[class='content'] div {
+    display: inline-flex;
+    margin-top: 30px;
+}
+
+section[class='content'] div div {
+    display: block;
+    padding-right: 10px;
+}
+
+section[class='content'] div div p {
+    text-align: center;
+    color: red;
+}
+
+/*section[class='justice-league'] div {
+    background-image: url('../images/illustrations/Bathome11.png');
+    height: 500px;
+}*/
