@@ -46,7 +46,6 @@
                 <img src="./assets/images/logos/flèche_down_header.png" alt='Flèche down header'>
             </div>
         </section>
-
         <!-- BATMAN AU CINEMA -->
         <section class="content">
             <h1>BATMAN AU CINÉMA</h1>
@@ -56,19 +55,19 @@
             <div>
                 <div>
                     <img src="assets/images/illustrations/Bathome2.png" alt="Photo de batman en 2022 (Robert Pattinson)">
-                    <p>Robert Pattinson (2022)</p>
+                    <p>Robert Pattinson <br> (2022)</p>
                 </div>
                 <div>
                     <img src="assets/images/illustrations/Bathome3.png" alt="Photo de batman 2006, 2008, 2012 (Christian Bale)">
-                    <p>Christian Bale (2006-2008-2012)</p>
+                    <p>Christian Bale <br> (2006-2008-2012)</p>
                 </div>
                 <div>
                     <img src="assets/images/illustrations/Bathome4.png" alt="Photo de batman 2016-2017/2020-2023 (Ben Affleck)">
-                    <p>Ben Affleck 20016-2017/2020-2023</p>
+                    <p>Ben Affleck <br> 20016-2017/2020-2023</p>
                 </div>
             </div>
         </section>
-
+        <img class="img-enemy" src="assets/images/illustrations/Bathome13.png" alt="Image de boomerang de batman">
         <!-- NEMESIS -->
         <section class="content">
             <h1>NÉMÉSIS</h1>
@@ -78,15 +77,15 @@
             <div>
                 <div>
                     <img src="assets/images/illustrations/Bathome5.png" alt="Photo de The Riddler en 2022 (Paul Dano)">
-                    <p>The Riddler - Paul Dano (2022)</p>
+                    <p>The Riddler - Paul Dano <br> (2022)</p>
                 </div>
                 <div>
                     <img src="assets/images/illustrations/Bathome6.png" alt="Photo de Le Joker en 2008 (Heath Ledger)">
-                    <p>Le Joker Heath - Ledger (2008)</p>
+                    <p>Le Joker Heath - Ledger <br> (2008)</p>
                 </div>
                 <div>
                     <img src="assets/images/illustrations/Bathome7.png" alt="Photo de Darkseid en 2022 (Ray Porter)">
-                    <p>Darkseid - Ray Porter (2022)</p>
+                    <p>Darkseid - Ray Porter <br> (2022)</p>
                 </div>
             </div>
         </section>
@@ -100,18 +99,19 @@
             <div>
                 <div>
                     <img src="assets/images/illustrations/Bathome9.png" alt="Photo de Alfred Pennyworth - Michael Cain (2006-2008-2012)">
-                    <p>Alfred Pennyworth - Michael Cain (2006-2008-2012)</p>
+                    <p>Alfred Pennyworth - Michael Cain <br> (2006-2008-2012)</p>
                 </div>
                 <div>
                     <img src="assets/images/illustrations/Bathome8.png" alt="Photo de Catwoman - Zoé Kravitz (2008)">
-                    <p>Catwoman - Zoé Kravitz (2008)</p>
+                    <p>Catwoman - Zoé Kravitz <br> (2008)</p>
                 </div>
                 <div>
                     <img src="assets/images/illustrations/Bathome10.png" alt="Photo de James Gordon (2014-2019)">
-                    <p>James Gordon (2014-2019)</p>
+                    <p>James Gordon <br> (2014-2019)</p>
                 </div>
             </div>
         </section>
+        <img class="img-alias" src="assets/images/illustrations/Bathome12.png" alt="Photo de batman en position d'attaque">
 
         <!-- JUSTICE LEAGUE -->
         <section class="justice-league">
@@ -127,22 +127,71 @@
         <!-- MULTIMEDIA -->
         <section class="multimedia">
             <h1>MULTIMÉDIA</h1>
-            <div>
-                <img src="assets/images/logos/icon_flèche_1.png" alt="fleche left">
-                <img src="assets/images/illustrations/Bathome_ba1.png">
-                <img src="assets/images/logos/icon_flèche_2.png" alt="fleche right">
-                <img src="assets/images/illustrations/Bathome_ba2.png">
+            <div style="display: inline-flex;">
+                <img class="arrow-left" src="assets/images/logos/icon_flèche_1.png" alt="fleche left">
+                <div class="multi-content">
+                    <img src="assets/images/illustrations/Bathome_ba1.png">
+                    <div class="bg-liner-green">
+                        <h2>ACTION, ADVENTURE</h2>
+                        <p class="text-randjani-head">Batman Begins</p>
+                        <p class="text-space-grotesk-head">IMDB : 8.2</p>
+                        <p class="text">
+                            Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans la lutte contre le crime sous le nom de Batman.
+                        </p>
+                    </div>
+                </div>
+                <img class="arrow-right" src="assets/images/logos/icon_flèche_2.png" alt="fleche right">
             </div>
+            <div style="margin-top: 150px;">
+                <img width="100%" src="assets/images/illustrations/Bathome_ba2.png">
+            </div>
+            <br><br>
         </section>
-
         <section class="contact">
             <h1>PRENONS CONTACT</h1>
+            <div>
+                <label>ADRESSE EMAIL</label>
+                <input type="text" name="email" placeholder="Adresse email">
+                <label>NEWSLETTER</label>
+                <p>
+                    En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :
+                </p>
+                <input type="text" name="type" placeholder="Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter">
+                <input type="text" name="confirmation" placeholder="Souhaitez vous recevoir des news">
+                <div>
+                    <button type="button">Des films</button>
+                    <button type="button">Des comics</button>
+                    <button type="button">De tout</button>
+                </div>
+                <label>MESSAGE</label>
+                <input type="text" name="message" placeholder="Laissez un commentaire pour la communauté">
+                <button type="button">CONFIRMER</button>
+            </div>
         </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        
+        <section>
+            <img src="assets/images/logos/icon_guillemets_2.png">
+            <div>
+                La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.
+                The Dark Knight : Le Chevalier Noir -
+                Le Joker à Batman (2008)
+            </div>
+            <img src="assets/images/logos/icon_guillemets_2.png">
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <div>
+                <img src="assets/images/logos/icon_WB.png">
+                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+            </div>
+            <div>
+                <img src="assets/images/logos/logo_sayna_white.png">
+                <img src="assets/images/logos/icon_x.png">
+                <img src="assets/images/logos/icon_DC.png">
+                <img src="assets/images/logos/icon_facebook.png">
+                <img src="assets/images/logos/icon_ig.png">
+                <img src="assets/images/logos/icon_tw.png">
+            </div>
     </footer>
+    </main>
 </body>
 </html>

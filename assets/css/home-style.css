@@ -20,16 +20,20 @@
     height: 60px;
 }
 
+
+/* ============================== CONTENT OF ALL SECTIONS =============================== */
 section[class='content'] {
     padding: 50px;
     text-align: justify;
 }
 
-section[class='content'] p {
+/* Titre */
+section[class='content'] .text-1 {
     padding-right: 102px;
     text-align: justify;
 }
 
+/* Contenue */
 section[class='content'] div {
     display: inline-flex;
     margin-top: 30px;
@@ -37,15 +41,113 @@ section[class='content'] div {
 
 section[class='content'] div div {
     display: block;
-    padding-right: 10px;
+    padding-right: 60px;
+    text-align: right;
+}
+
+/* Image */
+section[class='content'] div div img {
+    width: 260px;
 }
 
 section[class='content'] div div p {
     text-align: center;
-    color: red;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
 }
 
-/*section[class='justice-league'] div {
-    background-image: url('../images/illustrations/Bathome11.png');
-    height: 500px;
-}*/
+/* STYLE FOR SECTION JUSTICE LEAGUE */
+section[class='justice-league'] {
+    margin-top: 100px;
+}
+
+section[class='justice-league'] p, section[class='justice-league'] h1 {
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: justify;
+}
+
+section[class='justice-league'] div img {
+    margin-left: -20%;
+}
+
+/* PHOTO DU BOOMERANG */
+img[class="img-enemy"] {
+    width: 120px;
+    height: 120px;
+    margin-left: 13%;
+    margin-bottom: -13%;
+}
+
+/* PHOTO DE BATMAN */
+img[class="img-alias"] {
+    float: right;
+    margin-top: -108%;
+    margin-right: -15%;
+}
+
+/* STYLE FOR SECTION MULTIMEDIA */
+section[class='multimedia'] {
+    padding: 50px;
+}
+
+.multi-content {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right, rgba(237, 222, 191, 0.3), rgba(25, 88, 125, 0.3));
+    background-color: transparent;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 25%;
+    height: 200px;
+}
+
+.multi-content div {
+    height: 100%;
+    width: 350px;
+    padding: 15px;
+}
+
+.multi-content div p {
+    margin-top: -3%;
+}
+
+.multi-content div h2 {
+    margin-top: -2%;
+}
+
+.multi-content img {
+    height: 200px;
+}
+
+.arrow-left {
+   height: 100%;
+   margin-top: 12.5%;
+}
+
+.arrow-right {
+    height: 100%;
+    margin-left: 25%;
+    margin-top: 12.5%;
+}
+
+.multi-video {
+    margin-top: 50px;
+}
+
+.contact {
+    margin: 0px -20%;
+    padding: 50px 200px;
+    background-image: linear-gradient(to bottom right, rgb(100, 85, 54), rgb(0, 50, 50));
+    background-color: transparent;
+    border: 1px solid rgba(70, 70, 70, 0.9);;
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
