@@ -10,8 +10,7 @@
     padding: 90px 230px 0px 230px;
 }
 
-.boutton-intro button {
-    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.3) 40%, rgba(137, 0, 8, 0.3) 60%);
+.boutton-intro button, .part-5 button {
     text-decoration: none;
     background-color: transparent;
     color: white;
@@ -20,6 +19,13 @@
     height: 60px;
 }
 
+.boutton-intro button {
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.3) 40%, rgba(137, 0, 8, 0.3) 60%);
+}
+
+.part-5 button {
+    background-image: linear-gradient(to bottom right, rgba(237, 222, 191, 0.7), rgba(137, 0, 8, 0.7));
+}
 
 /* ============================== CONTENT OF ALL SECTIONS =============================== */
 section[class='content'] {
@@ -57,7 +63,7 @@ section[class='content'] div div p {
     font-weight: bolder;
 }
 
-/* STYLE FOR SECTION JUSTICE LEAGUE */
+/*==================== STYLE FOR SECTION JUSTICE LEAGUE ==================*/
 section[class='justice-league'] {
     margin-top: 100px;
 }
@@ -87,7 +93,7 @@ img[class="img-alias"] {
     margin-right: -15%;
 }
 
-/* STYLE FOR SECTION MULTIMEDIA */
+/*================ STYLE FOR SECTION MULTIMEDIA ===============*/
 section[class='multimedia'] {
     padding: 50px;
 }
@@ -136,6 +142,7 @@ section[class='multimedia'] {
     margin-top: 50px;
 }
 
+/* ===================== STYLE FOR SECTION CONTACT =================*/
 .contact {
     margin: 0px -20%;
     padding: 50px 200px;
@@ -148,6 +155,93 @@ section[class='multimedia'] {
     text-align: center;
 }
 
+.formulaire-contact {
+    padding: 50px 200px;
+}
+
+.part-2, .part-4 {
+    padding-top: 40px;    
+}
+
+.part-3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.part-5 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.part-3 button {
+    font-size: 14px;
+    padding: 7px 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(50, 100, 100);
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.contact input[type='text'], .contact select {
+    height: 20px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 14px;
+}
+
+.contact input[type='text']:hover{
+    border-bottom: 2px solid white;
+}
+
+.contact input[type='text']:focus{
+    border-bottom: 3px solid white;
+}
+
+/* ===================== STYLE FOR SECTION CITATION =================*/
+section[class='citation'] {
+    padding: 150px;
+}
+
+section[class='citation'] .text {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+section[class='citation'] .text .subtext {
+    font-size: 14px;
+    color: #888;
+}
+
+section[class='citation'] .close {
+    text-align: right;
+    margin-top: -50px;
+}
+
+.close {
+    text-align: right;
+}
+
+/* ===================== STYLE FOR SECTION FOOTER =================*/
 footer {
     text-align: center;
+}
+
+footer .text {
+    font-size: 12px;
+}
+
+footer .logos {
+    padding: 50px;
+    letter-spacing: 20px;
+}
+
+.-ml-5 {
+    margin-left: -20px;
 }
