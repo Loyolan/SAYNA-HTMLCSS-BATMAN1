@@ -203,6 +203,64 @@ section[class='multimedia'] {
     border-bottom: 3px solid white;
 }
 
+.custom-select {
+  position: relative;
+  border-bottom: 1px solid white;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    height: 50px;
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-color: rgb(100, 100, 100) transparent transparent transparent;
+  background-image: linear-gradient(to bottom right, rgb(100, 85, 54), rgb(0, 50, 50));;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom right, rgb(100, 85, 54), rgb(0, 50, 50));
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*.contact select option {
+    background-image: linear-gradient(to bottom right, rgb(100, 85, 54), rgb(0, 50, 50));
+    background-color: transparent;
+    border: 1px solid rgba(70, 70, 70, 0.9);
+}*/
+
 /* ===================== STYLE FOR SECTION CITATION =================*/
 section[class='citation'] {
     padding: 150px;
