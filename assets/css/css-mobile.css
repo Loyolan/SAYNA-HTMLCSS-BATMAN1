@@ -2,7 +2,7 @@
     || CSS FOR MOBILE (WIDTH LESS THAN 450PX)
 */
 
-@media screen and (max-width:  480px) {
+@media screen and (max-width:  900px) {
 /*
     || css global
 */
@@ -24,7 +24,7 @@ header {
 }
 
 aside {
-    margin-left: 55%;
+    margin-left: 60vw;
 }
 
 aside img {
