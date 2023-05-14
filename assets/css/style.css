@@ -1,4 +1,4 @@
-/*
+
     CSS GLOBAL FOR ALL PAGES
 */
 /* Import all fonts */
@@ -18,7 +18,7 @@
 
 html {
     color: white;
-    font-family: 'Rajdhani-Medium';
+    /*font-family: 'Rajdhani-Medium';*/
     overflow-x: hidden;
 }
 
@@ -26,6 +26,10 @@ html {
 button {
     font-family: 'Rajdhani-Medium';
     font-size: 20px;
+}
+
+button span {
+    opacity: 1;
 }
 
 h1 {
@@ -107,22 +111,72 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* SIDEBAR */
+/* ========================== SIDEBAR ================================*/
 aside {
     float: right;
     position: fixed;
     text-align: center;
-    margin-left: 78.5%;
+    margin-left: 75.2%;
 }
 
 aside img {
-    margin-top: 30px;
+    margin-top: 20px;
+    border: 1px solid transparent;
 }
 
-/* CONTENT STYLE */
+ul li {
+    list-style-type: none;
+}
+
+/* ============= CONTENT STYLE =====================*/
 main {
     border: 3px solid rgba(188, 187, 189, 0.2);
     padding: 20px;
     padding-bottom: 200px;
     border-bottom: none;
+}
+
+/* TEXT CENTER */
+.text-center {
+    text-align: center;
+}
+
+.hover-jaune-bataman:hover {
+    border-color: #f8f184;
+}
+
+.hover-jaune-bataman {
+    border: 1px solid transparent;
+}
+
+.logos ul {
+    display: inline-flex;
+}
+
+/*============ ANIMATION ==================*/
+/* ZOOM DE 10% */
+.animate-zoom:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* FADE IN */
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 3s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.message {
+    font-size: 24px;
 }

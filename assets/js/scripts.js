@@ -1,80 +1,77 @@
-var x, i, j, l, ll, selElmnt, a, b, c;
-/* Look for any elements with the class "custom-select": */
-x = document.getElementsByClassName("custom-select");
-l = x.length;
-for (i = 0; i < l; i++) {
-  selElmnt = x[i].getElementsByTagName("select")[0];
-  ll = selElmnt.length;
-  /* For each element, create a new DIV that will act as the selected item: */
-  a = document.createElement("DIV");
-  a.setAttribute("class", "select-selected");
-  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-  x[i].appendChild(a);
-  /* For each element, create a new DIV that will contain the option list: */
-  b = document.createElement("DIV");
-  b.setAttribute("class", "select-items select-hide");
-  for (j = 1; j < ll; j++) {
-    /* For each option in the original select element,
-    create a new DIV that will act as an option item: */
-    c = document.createElement("DIV");
-    c.innerHTML = selElmnt.options[j].innerHTML;
-    c.addEventListener("click", function(e) {
-        /* When an item is clicked, update the original select box,
-        and the selected item: */
-        var y, i, k, s, h, sl, yl;
-        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-        sl = s.length;
-        h = this.parentNode.previousSibling;
-        for (i = 0; i < sl; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
-            h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            yl = y.length;
-            for (k = 0; k < yl; k++) {
-              y[k].removeAttribute("class");
-            }
-            this.setAttribute("class", "same-as-selected");
-            break;
-          }
-        }
-        h.click();
-    });
-    b.appendChild(c);
+/*
+  || GET FORMS CONTACT SUBMITING
+*/
+
+/* GET VALUES OF FORM AND VERIFY */
+const form = document.querySelector('form');
+const closePopup = document.getElementById("close-popup");
+const popupE = document.querySelector(".popup-error");
+const popupM = document.querySelector(".popup-message");
+const ul = document.getElementById("message-error")
+
+form.addEventListener('submit', (event) => {
+  removeLI(ul)
+  event.preventDefault();
+  const email = form.elements['email'].value;
+  const accept = form.elements['accept'].checked;
+  const type = form.elements['type'].value;
+  const confirmation = form.elements['confirmation'].value;
+  const message = form.elements['message'].value;
+  if (isEmailValid(email) && accept && type != "" && confirmation != "" && message != "") {
+    popupM.style.display = "block";
+  } else {
+    // Verify email
+    if (!isEmailValid(email)) {
+      const li = document.createElement('li');
+      li.textContent = '(*) L\'addresse email que vous avez saisie n\'est pas valide!';
+      ul.appendChild(li);
+    }
+
+    // Verify accept
+    if (!accept) {
+      const li = document.createElement('li');
+      li.textContent = '(*) Vous devez accepter de recevoir l’actualité concernant les aventures de Batman';
+      ul.appendChild(li);
+    }
+
+    // Verify type
+    if (type == "") {
+      const li = document.createElement('li');
+      li.textContent = '(*) Veillez preciser la fréquence à laquelle vous souhaitez recevoir votre newsletter';
+      ul.appendChild(li);
+    }
+
+    // Verify confirmation
+    if (confirmation == "") {
+      const li = document.createElement('li');
+      li.textContent = '(*) Veillez confirmer que vous voulez recevoir ou non des news';
+      ul.appendChild(li);
+    }
+
+    // Verify message
+    if (message == "") {
+      const li = document.createElement('li');
+      li.textContent = '(*) Redigez votre message';
+      ul.appendChild(li);
+    }
+    popupE.style.display = "block";
   }
-  x[i].appendChild(b);
-  a.addEventListener("click", function(e) {
-    /* When the select box is clicked, close any other select boxes,
-    and open/close the current select box: */
-    e.stopPropagation();
-    closeAllSelect(this);
-    this.nextSibling.classList.toggle("select-hide");
-    this.classList.toggle("select-arrow-active");
-  });
+});
+
+// EMAIL VALIDATON FUNCTION
+function isEmailValid(email) {
+  const regex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  return regex.test(email);
 }
 
-function closeAllSelect(elmnt) {
-  /* A function that will close all select boxes in the document,
-  except the current select box: */
-  var x, y, i, xl, yl, arrNo = [];
-  x = document.getElementsByClassName("select-items");
-  y = document.getElementsByClassName("select-selected");
-  xl = x.length;
-  yl = y.length;
-  for (i = 0; i < yl; i++) {
-    if (elmnt == y[i]) {
-      arrNo.push(i)
-    } else {
-      y[i].classList.remove("select-arrow-active");
-    }
-  }
-  for (i = 0; i < xl; i++) {
-    if (arrNo.indexOf(i)) {
-      x[i].classList.add("select-hide");
-    }
+// REMOVE ALL ITEMS OF AN UL
+function removeLI(ul) {
+  while (ul.firstChild) {
+    ul.removeChild(ul.firstChild);
   }
 }
 
-/* If the user clicks anywhere outside the select box,
-then close all select boxes: */
-document.addEventListener("click", closeAllSelect);
+closePopup.addEventListener("click", function() {
+  removeLI(ul)
+  popupE.style.display = "none";
+});
