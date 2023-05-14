@@ -1,5 +1,6 @@
 
-    CSS GLOBAL FOR ALL PAGES
+ /* 
+    ||   CSS GLOBAL FOR ALL PAGES
 */
 /* Import all fonts */
 @font-face {
@@ -73,6 +74,7 @@ h2 {
     margin-top: 200px;
 }
 
+
 /*===============================================================
  CSS 
  ================================================================*/
@@ -85,15 +87,20 @@ body {
     background-repeat: no-repeat;
     margin-top: -10px;
     background-color: black;
+    background-size: contain;
     padding: 0px 102px;
 }
 
 /* HEADER STYLE */
 #page-top h1 {
-    margin-top: -10px;
+    background-image: url('../images/logos/logohome.png');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 70px;
 }
+
 header {
-    padding: 70px 102px 102px 102px;
+    padding: 50px 102px 50px 102px;
     border: 3px solid rgba(188, 187, 189, 0.2);
     display: flex;
     justify-content: space-between;
@@ -102,6 +109,10 @@ header {
 /*  NAV STYLE */
 nav {
     float: right;
+}
+
+nav ul {
+    display: inline-flex;
 }
 
 nav a {
@@ -125,8 +136,11 @@ aside {
 }
 
 aside img {
-    margin-top: 20px;
     border: 1px solid transparent;
+}
+
+aside .social-network {
+    margin-top: 20%;
 }
 
 ul li {
@@ -154,9 +168,10 @@ main {
     border: 1px solid transparent;
 }
 
-.logos ul {
-    display: inline-flex;
+.mt-10 {
+    margin-top: 10%;
 }
+
 
 /*============ ANIMATION ==================*/
 /* ZOOM DE 10% */
